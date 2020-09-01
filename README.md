@@ -1,2 +1,3 @@
-# breaking-bad-character-explorer
-Breaking Bad Character Explorer
+# Breaking Bad Character Explorer
+
+Simple Android app presenting the characters from "Breaking Bad" television series
