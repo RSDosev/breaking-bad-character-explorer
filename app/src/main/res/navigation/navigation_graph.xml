@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_launch"
+    app:startDestination="@id/charactersListFragment">
+
+    <fragment
+        android:id="@+id/charactersListFragment"
+        android:name="com.gan.breakingbadcharacters.ui.characterslist.CharactersListFragment"
+        android:label="CharactersListFragment"
+        tools:layout="@layout/fragment_characters_list">
+
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/charactersDetailsFragment"
+            app:enterAnim="@anim/enter"
+            app:exitAnim="@anim/exit"
+            app:popEnterAnim="@anim/pop_enter"
+            app:popExitAnim="@anim/pop_exit"
+            app:popUpTo="@+id/charactersDetailsFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/charactersDetailsFragment"
+        android:name="com.gan.breakingbadcharacters.ui.characterdetails.CharacterDetailsFragment"
+        android:label="CharacterDetailsFragment"
+        tools:layout="@layout/fragment_character_details">
+
+        <argument
+            android:name="characterId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

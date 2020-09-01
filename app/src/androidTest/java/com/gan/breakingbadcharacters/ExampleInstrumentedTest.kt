@@ -1,4 +1,4 @@
-package com.gan.breakingbadchararters
+package com.gan.breakingbadcharacters
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
